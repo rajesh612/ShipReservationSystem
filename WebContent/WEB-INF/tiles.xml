@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="HomeLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+		<definition name="IndexLayout"
+		template="/WEB-INF/jsp/layout1.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value=" " />
+	</definition>
+	<definition name="SignupLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/HomeMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="logoutLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/HomeMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="basic"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="passwordLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="addshipLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="RegSuccessLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	
+	<definition name="AdminLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/AdminMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="CustomerLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/CustomerMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	 <definition name="login" extends="HomeLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	 <definition name="index" extends="IndexLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+	</definition>
+	<definition name="Profile" extends="SignupLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Profile.jsp" />
+	</definition>
+	<definition name="logout" extends="logoutLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/logout.jsp" />
+	</definition>
+	<definition name="password" extends="passwordLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/password.jsp" />
+	</definition>
+	<definition name="RegSuccess" extends="RegSuccessLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/RegSuccess.jsp" />
+	</definition>
+	<!-- To navigate to "Aboutus" -->
+	<definition name="Aboutus" extends="basic">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Aboutus.jsp" />
+	</definition>
+	<!-- To navigate to "Contactus" -->
+	<definition name="Contactus" extends="basic">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Contactus.jsp" />
+	</definition>
+	<!-- To navigate to "AdminHome" -->
+	<definition name="AdminHome" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/AdminHome.jsp" />
+	</definition>
+	
+	<definition name="CustomerHome" extends="CustomerLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CustomerHome.jsp" />
+	</definition>
+	
+	<definition name="InvalidUser" extends="HomeLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/InvalidUser.jsp" />
+	</definition>
+	
+	
+	<definition name="addship" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/addship.jsp" />
+	</definition>
+	
+	<definition name="ModifyShip" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ModifyShip.jsp" />
+	</definition>
+	
+<definition name="ShipAdd" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ShipAdd.jsp"/>
+
+</definition>
+
+
+
+<definition name="Success" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/Success.jsp"/>
+
+</definition>
+
+
+<definition name="Failure" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/Failure.jsp"/>
+
+</definition>
+
+
+<definition name="DeleteShip" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/DeleteShip.jsp"/>
+
+</definition>
+<definition name="ViewShips" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewShips.jsp"/>
+
+</definition>
+
+
+<definition name="RouteAdd" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/RouteAdd.jsp"/>
+
+</definition>
+<definition name="ViewRoute" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewRoute.jsp"/>
+
+</definition>
+
+<definition name="ModifyRoute" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ModifyRoute.jsp"/>
+
+</definition>
+<definition name="DeleteRoute" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/DeleteRoute.jsp"/>
+
+</definition>
+
+<definition name="ScheduleAdd" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ScheduleAdd.jsp"/>
+
+</definition>
+
+
+<definition name="ViewSchedule" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewSchedule.jsp"/>
+
+</definition>
+
+<definition name="ModifySchedule" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ModifySchedule.jsp"/>
+
+</definition>
+
+<definition name="DeleteSchedule" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/DeleteSchedule.jsp"/>
+</definition>
+
+<definition name="ViewPassengers" extends="AdminLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewPassengers.jsp"/>
+
+</definition>
+
+<definition name="ViewScheduleByRoute" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewScheduleByRoute.jsp"/>
+</definition>
+<definition name="CustomerFail" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/CustomerFail.jsp"/>
+</definition>
+
+<definition name="CustShipDetails" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/CustShipDetails.jsp"/>
+</definition>
+
+<definition name="FillDetails" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/FillDetails.jsp"/>
+</definition>
+
+<definition name="CustomerSuccess" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/CustomerSuccess.jsp"/>
+</definition>
+
+
+
+<definition name="ViewTicket" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewTicket.jsp"/>
+</definition>
+
+<definition name="ViewPdf" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewPdf.jsp"/>
+</definition>
+
+<definition name="Payment" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/Payment.jsp"/>
+</definition>
+
+<definition name="ViewTicketsPagination" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/ViewTicketsPagination.jsp"/>
+</definition>
+
+<definition name="PassengerDetails" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/PassengerDetails.jsp"/>
+</definition>
+
+<definition name="Cancel" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/Cancel.jsp"/>
+</definition>
+
+<definition name="SystemError" extends="CustomerLayout">
+
+<put-attribute name="body" value="/WEB-INF/jsp/SystemError.jsp"/>
+</definition>
+
+</tiles-definitions>
